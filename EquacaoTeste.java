@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class EuquacaoTeste {
+class EquacaoTeste {
     public static void main(String[] args) {
         double a, b, c;
         Scanner input = new Scanner(System.in);
@@ -9,7 +9,7 @@ class EuquacaoTeste {
         b = input.nextDouble();
         c = input.nextDouble();
         input.close();
-        String resultado = EquacaoSegundoGrau.calcularResolutiva(a, b, c);
-        System.out.printf(resultado);
+        double resultado = EquacaoSegundoGrau.calcularDelta(a, b, c);
+        System.out.println(resultado);
     }
 }
